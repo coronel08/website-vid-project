@@ -19,6 +19,11 @@
     z-index: 2;
 }
 
+/*  */
+.showcase:active {
+    
+}
+
 /* Title/Logo and Menu Icon */
 .showcase header{
     position: fixed;
@@ -61,12 +66,7 @@ Still need to fill out, make toggle change into Exit Icon
 Targeting active state of toggle below
 */
 .toggle.active{
- 
-}
-
-.menu li{
-    list-style: none;
-    font-size: 1.5em;
+    background-color: black; 
 }
 
 /* Center and fit Video */
@@ -91,6 +91,7 @@ Targeting active state of toggle below
     mix-blend-mode: overlay;
 }
 
+/* Body / Text of post */
 .text {
     position: relative;
     z-index: 10;
@@ -137,6 +138,7 @@ Targeting active state of toggle below
     letter-spacing: 6px;
 }
 
+/* Social Media Links */
 .social {
     position: absolute;
     bottom: 20px;
@@ -155,6 +157,34 @@ Targeting active state of toggle below
     transition: .3s;
 }
 
+/* Menu styling */
+.menu{
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top:100px;
+    height: auto;
+}
+
+.menu li{
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.menu li:hover{
+    color:purple;
+    transform: scale(1.2) translateX(3px);
+    transition: .3s;
+}
+
+/* Fix problem with click on page highlights all menu */
+.showcase:active .menu{
+    letter-spacing: 6px;
+    font-size: 1.3em;
+    color: aqua;
+    right: 0px;
+    background-color: black;
+}
 
 @media(max-width:600px){
     .text h2{
