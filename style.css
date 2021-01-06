@@ -57,7 +57,7 @@
 }
 
 /* 
-Still need to fill out
+Still need to fill out, make toggle change into Exit Icon
 Targeting active state of toggle below
 */
 .toggle.active{
@@ -155,4 +155,18 @@ Targeting active state of toggle below
     transition: .3s;
 }
 
-@media(max-width)
+
+@media(max-width:600px){
+    .text h2{
+        font-weight: 800;
+    }
+
+    .text h3{
+        font-size: 1em;
+    }
+
+    .text p{
+        font-size: small;
+        padding-top: 10px;
+        }
+}
