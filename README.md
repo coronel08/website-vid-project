@@ -21,7 +21,11 @@ loremipsum
 <br><br>
 
 ### Notes
-loremipsum
+Showcase header position is fixed but maybe try absolute to fix problems with menu.
+
+*** Hide items in CSS***
+Use visibility instead of [display:none](https://www.w3schools.com/css/css_display_visibility.asp). display none deletes the item, visibility just hides it in place.
+
 <br><br>
 
 
@@ -34,6 +38,28 @@ Example of selecting a paragraph with [class of thicker ](https://www.w3schools.
 ```
 .toggle.active=looking for active on the toggle  
 .toggle .active=looking for active inside of toggle 
+```
+Example of selecting an item within a class
+```
+.menu li{
+    list-style: none;
+    font-size: 1.5em;
+}
+
+<!-- Can be written as below because <li> is in a <ul> -->
+.menu ul li
+
+```
+
+*** Custom Property / Variable***
+Adding a custom property for the color blue
+```
+:root {
+    --overlay-color: #03a9f4;
+}
+
+<!-- Gets called in Div like this -->
+    color: var(--overlay-color)
 ```
 
 *** Positions ***
@@ -48,6 +74,16 @@ Example of selecting a paragraph with [class of thicker ](https://www.w3schools.
 [w3 Display Prop example](https://www.w3schools.com/css/css_display_visibility.asp) Show display on click and hide on click
 [Flex align/center/justify etc](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 <br><br>
+
+*** Example of Flex ***
+The align-items centers vertical, justify content centers horizontal.
+```
+    display: flex;
+    align-items: center;
+    justify-content: center;
+```
+<br><br>
+
 
 *** CSS Units ***
 

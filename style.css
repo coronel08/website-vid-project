@@ -1,3 +1,7 @@
+:root {
+    --overlay-color: #03a9f4;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -19,9 +23,9 @@
     z-index: 2;
 }
 
-/*  */
-.showcase:active {
-    
+/* Right Side Nav Bar */
+.showcase.active {
+    right: 150px;
 }
 
 /* Title/Logo and Menu Icon */
@@ -65,7 +69,7 @@
 Still need to fill out, make toggle change into Exit Icon
 Targeting active state of toggle below
 */
-.toggle.active{
+.toggle:active{
     background-color: black; 
 }
 
@@ -122,7 +126,7 @@ Targeting active state of toggle below
 .text a{
     display: inline-block;
     background: white;
-    color: purple;
+    color: var(--overlay-color);
     padding: 10px 20px;
     text-decoration: none;
     letter-spacing: 2px;
@@ -152,18 +156,22 @@ Targeting active state of toggle below
 }
 
 .social li:hover{
-    color:purple;
+    color: var(--overlay-color);
     transform: scale(1.2) translateY(-3px);
     transition: .3s;
 }
 
 /* Menu styling */
 .menu{
-    display: flex;
     position: absolute;
-    right: 15px;
-    top:100px;
-    height: auto;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu li{
@@ -171,20 +179,21 @@ Targeting active state of toggle below
     font-size: 1.5em;
 }
 
+
 .menu li:hover{
-    color:purple;
+    color: var(--overlay-color);
     transform: scale(1.2) translateX(3px);
-    transition: .3s;
+    transition: .2s;
 }
 
 /* Fix problem with click on page highlights all menu */
-.showcase:active .menu{
+/* .showcase:active .menu{
     letter-spacing: 6px;
     font-size: 1.3em;
     color: aqua;
     right: 0px;
     background-color: black;
-}
+} */
 
 @media(max-width:600px){
     .text h2{
