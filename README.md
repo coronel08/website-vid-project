@@ -6,6 +6,9 @@ Uses a video for the background.
 
 Followed this youtube tutorial on styling the css Code snippets will be in Notes
 
+
+![preview-site](https://github.com/coronel08/website-vid-project/blob/main/website-view.gif)
+
 ## Table of Contents
 * [General Info](#General-info)
 * [Notes](#Notes)
