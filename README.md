@@ -4,7 +4,7 @@ This was used to practice html & css styling with very simple Javascript.
 Built using html/css/javascript project
 Uses a video for the background.
 
-Followed this [youtube tutorial]() on styling the css Code snippets will be in Notes
+Followed this [youtube tutorial](https://www.youtube.com/watch?v=8MgpE2DTTKA) on styling the css Code snippets will be in Notes
 
 
 ![preview-site](https://github.com/coronel08/website-vid-project/blob/main/website-preview.gif)
@@ -17,6 +17,8 @@ Followed this [youtube tutorial]() on styling the css Code snippets will be in N
 * [Todo List](#todo-list)
 
 ### General Info
+Original background video from this site. https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880
+
 Setup mainly using CSS/HTML and minimal javascript just to toggle active state in index.html
 
 
