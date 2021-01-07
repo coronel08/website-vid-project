@@ -70,6 +70,8 @@
 
     <!-- Javascript for active state -->
     <script>
+        // below is an example of selecting active if in a toggle 
+        // console.log(document.querySelector(".toggle.active"))
         const menuToggle = document.querySelector('.toggle')
         const showcaseToggle = document.querySelector('.showcase')
 
@@ -77,6 +79,26 @@
             menuToggle.classList.toggle('active')
             showcaseToggle.classList.toggle('active')
         })
+        
+        // If/Then statement. If class contains "active" 
+        const test = () => { 
+            if (menuToggle.classList.contains("active")){
+                console.log('opt 1')
+            } else {
+                console.log('opt 2')
+            }
+        }
+
+        // If/Then statement. If active class in class. 
+        const isActive = document.getElementsByClassName('showcase active')
+        const test1 = () =>{
+            if (isActive.length > 0){
+                console.log('showcase active is on')
+            } else {
+                console.log('showcase active is off')
+            }
+        }
+
     </script>
 </body>
 

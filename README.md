@@ -29,7 +29,10 @@ Mobile view works on site.
 <br><br>
 
 ### Notes
-Javascript to handle toggle is at bottom of index.html
+Javascript to handle toggle is at bottom of index.html.
+Javascript if else practice using Javascipt Query Selector, Classlist.conatins, and GetElementByClassname.
+
+------ See Javascript section of file for if/else selecting javascript examples. 
 <br><br>
 
 
