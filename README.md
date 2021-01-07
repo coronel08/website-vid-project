@@ -4,7 +4,7 @@ This was used to practice html & css styling with very simple Javascript.
 Built using html/css/javascript project
 Uses a video for the background.
 
-Followed this youtube tutorial on styling the css Code snippets will be in Notes
+Followed this [youtube tutorial]() on styling the css Code snippets will be in Notes
 
 
 ![preview-site](https://github.com/coronel08/website-vid-project/blob/main/website-view.gif)
@@ -17,20 +17,26 @@ Followed this youtube tutorial on styling the css Code snippets will be in Notes
 * [Todo List](#todo-list)
 
 ### General Info
-loremipsum
+Setup mainly using CSS/HTML and minimal javascript just to toggle active state in index.html
+
+
+Video background can be disabled by commenting out the vid in index.html.
+
+
+Mobile view works on site. 
 <br><br>
 
 ### Notes
-Showcase header position is fixed but maybe try absolute to fix problems with menu.
-
-*** Hide items in CSS***
-Use visibility instead of [display:none](https://www.w3schools.com/css/css_display_visibility.asp). display none deletes the item, visibility just hides it in place.
-
+Javascript to handle toggle is at bottom of index.html
 <br><br>
 
 
 ### CSS
 Css styling notes
+<br><br>
+
+*** Hide items in CSS***
+Use visibility instead of [display:none](https://www.w3schools.com/css/css_display_visibility.asp). display none deletes the item, visibility just hides it in place.
 <br><br>
 
 *** Selecting a class in css ***
@@ -50,6 +56,13 @@ Example of selecting an item within a class
 .menu ul li
 
 ```
+Example targeting the "a" item inside of text, inside of showcase when active.
+```
+.showcase:active .text a{
+    background-color: black;
+}
+```
+<br><br>
 
 *** Custom Property / Variable***
 Adding a custom property for the color blue
@@ -103,6 +116,32 @@ Import Icon in [Bootstrap tutorial](https://fontawesome.com/v3.2.1/examples/)
 ```
 <i class="icon-facebook">Facebook</i> 
 ```
+CSS for adding Font Awesome Icon, Icon tag inside of toggle
+```
+/* Active state of toggle below, background turns blue on click */
+.toggle:active {
+    background-color: blue;
+}
+
+/* Add Font Awesome Icon  */
+.toggle i:before {
+    font-family: FontAwesome; 
+    content: "\f0d7";
+    position: absolute;
+    left: 5px;
+    bottom: -5px;
+}
+
+/* Change Font Awesome Icon on active state */
+.toggle.active i:before {
+    font-family: FontAwesome; 
+    content: "\f0d8";
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+}
+```
+<br><br>
 
 Example of a bootstrap button
 ```
@@ -116,6 +155,9 @@ Example of a bootstrap button
 
 ### Todo List
 - [x] Add bootstrap
-- [ ] Add Font Awesome into this site
-- [ ] Finish Nav Menu
+- [x] Add Font Awesome into this site
+- [x] Finish Nav Menu
+- [x] Center Text Items
 - [ ] Replace info with usefull example site info
+- [x] Make mobile view accessible
+- [x] javascript conditional to change toggle icon to exit icon when clicked
