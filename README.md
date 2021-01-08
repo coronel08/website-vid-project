@@ -2,7 +2,7 @@
 This was used to practice html & css styling with very simple Javascript.
 
 Built using html/css/javascript project
-Uses a video for the background.
+Uses a video for the background. Also using Nginx/Docker for ddeployment
 
 Followed this [youtube tutorial](https://www.youtube.com/watch?v=8MgpE2DTTKA) on styling the css Code snippets will be in Notes
 
