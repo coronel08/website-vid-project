@@ -98,6 +98,7 @@ Adding a custom property for the color blue
 
 *** Example of Flex ***
 The align-items centers vertical, justify content centers horizontal.
+ALIGN-CONTENT should be used with WRAP in flex container.
 ```
     display: flex;
     align-items: center;
