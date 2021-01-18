@@ -161,6 +161,7 @@ Example of a bootstrap button
 <br><br>
 
 *** Bootstrap Accordion Example ***
+[Bootstrap Accordion Docs](https://getbootstrap.com/docs/4.5/components/collapse/)
 [Bootstrap Accordion Example](https://mdbootstrap.com/snippets/jquery/mdbootstrap/888142#html-tab-view) shows/ expands card on click
 
 
