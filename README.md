@@ -2,7 +2,9 @@
 This was used to practice html & css styling with very simple Javascript.
 
 Built using html/css/javascript project
-Uses a video for the background. Also using Nginx/Docker for ddeployment
+Uses a video for the background. Also using Nginx/Docker for deployment
+
+[BOOTSTRAP SITE](https://getbootstrap.com/docs/4.5/getting-started/introduction/) Components tab for styling
 
 
 [Docker Link](https://hub.docker.com/repository/docker/coronel08/vid-site1#)
