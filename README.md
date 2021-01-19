@@ -162,7 +162,65 @@ Example of a bootstrap button
 
 *** Bootstrap Accordion Example ***
 [Bootstrap Accordion Docs](https://getbootstrap.com/docs/4.5/components/collapse/)
-[Bootstrap Accordion Example](https://mdbootstrap.com/snippets/jquery/mdbootstrap/888142#html-tab-view) shows/ expands card on click
+
+
+Can use **href** or **data-target** to target the collapsable item ID. 
+
+Button needs data-toggle="collapse"
+```
+<p>
+    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample">
+        Link with href
+    </a>
+    <button class="btn btn-primary" data-toggle="collapse" href="#collapse1">
+        Button with data-target
+    </button>
+    <button class="btn btn-primary" data-toggle="collapse" data-target=".collapse" >
+        Toggle both buttons
+    </button>
+</p>
+```
+
+[Bootstrap Accordion Example](https://mdbootstrap.com/snippets/jquery/mdbootstrap/888142#html-tab-view) shows/ expands card on click. Optionally Can add Id's for styling 
+```
+<div class="accordion">
+
+    <!-- Card 1 -->
+    <div class="card">
+        <div class="card-header">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block" data-toggle="collapse" data-target="#clps1">
+                    Collapse Group 1
+                </button>
+            </h2>
+        </div>
+
+        <div class="collapse show" id="clps1">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <div class="card-header">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block" data-toggle="collapse" href="#clps2">
+                    Collapsible Group 2
+                </button>
+            </h2>
+        </div>
+
+        <div class="collapse show" id="clps2">
+            <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+        </div>
+    </div>
+
+</div>
+```
 
 
 ### Todo List
